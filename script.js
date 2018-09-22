@@ -1,4 +1,7 @@
-// alert("hello world");
+var a = 1;
+var b = 2;
 
-var a = "siema";
-console.log('Type is:', typeof a);
+console.log('Definition:', a, b);
+
+var c = a + b;
+console.log('Assigment:', c);
