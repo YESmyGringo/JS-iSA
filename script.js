@@ -1,17 +1,16 @@
-var num = 1;
-var stringNum = "2";
-var stringNotNumber = "Hello, World";
+// ES5:
+var foo = "foo";
+var foo = "hello";
 
-console.log(Number(stringNotNumber)); //NaN
+// ES6 only:
+let baz = "Boo";
+let fooz = "Fooz";
 
-var constructorNum = Number(stringNum);
+{
+    let baz = "Booze";
+    console.log(fooz, baz);
+}
 
-console.log(num + stringNum); //12
-console.log(num + Number(stringNum)); //3
-console.log(num + constructorNum); // 3
+console.log(baz);
 
-
-var array1 = [];
-var array2 = [];
-
-console.log(array1 + array2); //""
+const BAR = "I'm bar";
