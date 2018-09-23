@@ -1,27 +1,7 @@
-const vovo = "siema";
+const foo = true;
 
-if(vovo >= 1){
-    console.log("It's number:", vovo);
-} else if(typeof vovo == "string"){
-    console.log("It's string:", vovo);
-} else{
-    console.log("Undefinded!");
-}
+const bar = foo ? "Hello!" : "Bye!"; // Hello!  -> true
+console.log(bar);
 
-
-
-const value = "hello";
-
-switch(typeof value){
-    case "number":
-        console.log("It's number!:", value);
-        break;
-
-    case "string":
-        console.log("It's string!:", value);
-        break;
-
-    default:
-        console.log("Undefinded! ERROR!");
-}
-
+const bar2 = foo && false ? "Hello!" : "Bye!"; // Bye!  -> false
+console.log(bar2);
