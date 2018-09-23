@@ -1,7 +1,8 @@
-const foo = true;
+var numbers = [1, 2, 3, 4, 5];
 
-const bar = foo ? "Hello!" : "Bye!"; // Hello!  -> true
-console.log(bar);
+for (var i = 0; i < 4; i++)
+console.log(numbers[i])
 
-const bar2 = foo && false ? "Hello!" : "Bye!"; // Bye!  -> false
-console.log(bar2);
+for (var i = 0; i < numbers.length; i++) {
+    console.log(numbers[i])
+}
