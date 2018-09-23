@@ -14,3 +14,7 @@ console.log("Equal numbers:", x3 == x4); // true
 console.log("Equal arreys length:", x5.length == x6.length); // true
 console.log("Equal tab:", x7 == x8); // false
 console.log("Equal object:", x9 == x10); //false
+
+
+// equal the values in arreys in "x7" and "x8" by JSON.stringify 
+console.log("Equal arreys values:", JSON.stringify(x7) === JSON.stringify(x8)); // true
