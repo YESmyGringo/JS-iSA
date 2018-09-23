@@ -16,5 +16,6 @@ console.log("Equal tab:", x7 == x8); // false
 console.log("Equal object:", x9 == x10); //false
 
 
-// equal the values in arreys in "x7" and "x8" by JSON.stringify 
+// equal the values in arreys in "x7" and "x8" by JSON.stringify  
+// (can do this in arreys, keys, tab, objects ? - put they values to string)
 console.log("Equal arreys values:", JSON.stringify(x7) === JSON.stringify(x8)); // true
