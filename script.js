@@ -1,10 +1,29 @@
-const a = [1,2,3, ["a","b","c"]];  // --- drugi array na pozycji [3] w pierwszym
-// const b = a; --- pokazuja sie dwie takie same tablice w console.log
-const b = a.slice(0, a.length);
 
-b[3].push("d"); // --- dodajemy do [3] pozcycji na której jest array "d" =  [1,2,3, ["a", "b", "c", "d"]]
+const a = [1,2,3,4,5,6];
+const x = [7,8,9];
+console.log(a);
+console.log(x);
 
-console.log(a,b);
+const z = a.concat(x); // [1,2,3,4,5,6,7,8,9]
+console.log(z);
 
-var sliced = a.slice(1, 3); // --- wkazujemy początek i koniec wyświetlania z indexu. do 3 ponieważ +1.
-console.log(sliced);
+
+//const selectedItem = [a[1]]
+
+
+
+// --- wyciaganie pierwszej i ostatniej wartości  z tablicy "a"
+const selectedItem = a.slice(0,1); // [1]
+console.log(selectedItem);
+
+const lastItem = a.slice(a.length -1); // [6]
+console.log(lastItem);
+
+
+// --- scalenie selected i last w jedną tablice
+const w = selectedItem.concat(lastItem);  // [1,6]
+console.log(w);
+
+
+// --- to samo co wyżej krótszym kodem
+console.log([...a.slice(0,1), a.pop()]);  // [1,6]
