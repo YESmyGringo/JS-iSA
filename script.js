@@ -1,14 +1,8 @@
-var numbers = [1, 2, 3, 4, 5];
+const values = [];
 
-console.time('in loop')
-for (var i = 0; i < 4; i++){
-console.log(numbers[i])
+for(let i = 0; i < 10; i++) {
+    const randomValues = Math.floor(Math.random() * 1000) + 1
+    values.push(randomValues);
 }
-console.timeEnd('in loop')
 
-console.time('before loop')
-var lenght = numbers.lenght
-for (var i = 0; i < length; i++) {
-    console.log(numbers[i])
-}
-console.timeEnd('before loop')
+console.log(values);
