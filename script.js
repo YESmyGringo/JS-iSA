@@ -1,20 +1,3 @@
-function randomEvenLength(){
-    let n;
+const a = [1,2,3,4,5,6,7,8,9,10];
 
-    while(!n || n % 2 !== 0){
-        n = Math.floor(Math.random() * 100) + 6;
-    }
-    return n;
-}
-
-const a = [];
-const length = randomEvenLength();
-
-
-for(let i = 0; i < length; i++){
-a.push(Math.floor(Math.random() * 100));
-}
-
-const x = a.slice(length / 2 - 2, -length / 2 + 2);
-
-console.log(a, x);
+console.log(a.indexOf(9));
