@@ -1,3 +1,29 @@
-const a = [1,2,3,4,5,6,7,8,9,10];
+// var myCar = new Object();
 
-console.log(a.indexOf(9));
+// myCar.make = 'Toyota';
+// myCar.model = 'Supra';
+//myCar.year = '1994';
+
+// console.log(myCar);
+
+
+
+// --- to samo, różne sposoby
+
+
+ var myCar2 = {
+     make: 'Toyota',
+     model: 'Supra',
+     year: '1994',
+     parts: {
+         engine: '2jz',
+         body: 'coupe',
+         color: 'white',
+         rims: '19',
+         
+     },
+     sound: function(){ alert('Wrrrrrr!');}
+ }
+ 
+ console.log(myCar2);
+ myCar2.sound();
