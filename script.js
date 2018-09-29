@@ -1,10 +1,7 @@
-const values = [];
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let i = 0;
 
-// pętla wyświetla losową liczbe od 1 do 1000. pokazuje 10 liczb "i = 0; i < 10; i++"
-
-for(let i = 0; i < 10; i++) {
-    const randomValues = Math.floor(Math.random() * 1000) + 1
-    values.push(randomValues);
+while(i < a.length) {
+    console.log(a[i])
+    i++;
 }
-
-console.log(values);
