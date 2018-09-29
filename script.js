@@ -1,29 +1,20 @@
+function randomEvenLength(){
+    let n;
 
-const a = [1,2,3,4,5,6];
-const x = [7,8,9];
-console.log(a);
-console.log(x);
+    while(!n || n % 2 !== 0){
+        n = Math.floor(Math.random() * 100) + 6;
+    }
+    return n;
+}
 
-const z = a.concat(x); // [1,2,3,4,5,6,7,8,9]
-console.log(z);
-
-
-//const selectedItem = [a[1]]
-
-
-
-// --- wyciaganie pierwszej i ostatniej wartości  z tablicy "a"
-const selectedItem = a.slice(0,1); // [1]
-console.log(selectedItem);
-
-const lastItem = a.slice(a.length -1); // [6]
-console.log(lastItem);
+const a = [];
+const length = randomEvenLength();
 
 
-// --- scalenie selected i last w jedną tablice
-const w = selectedItem.concat(lastItem);  // [1,6]
-console.log(w);
+for(let i = 0; i < length; i++){
+a.push(Math.floor(Math.random() * 100));
+}
 
+const x = a.slice(length / 2 - 2, -length / 2 + 2);
 
-// --- to samo co wyżej krótszym kodem
-console.log([...a.slice(0,1), a.pop()]);  // [1,6]
+console.log(a, x);
