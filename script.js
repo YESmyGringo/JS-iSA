@@ -1,15 +1,19 @@
-const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //let i = 0;
 
-//while(i < a.length) {
-//    console.log(a[i])
+//while (i < 5) {
 //    i++;
+//    if (i === 3) {  // przeskakuje liczbe 3 i idzie dalej
+//        continue;
+//    }
+//    console.log(i);
 //}
 
-for(let value of a){
-    console.log('Value:', a);
-}
 
-for(let index in a) {
-    console.log('Index:', a);
+var numbers = [1,2,3,4,5];
+
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] === 3) {  // przy 3 zatrzymuje funkcje
+        break;
+    }
+    console.log(numbers[i]);
 }
